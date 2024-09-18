@@ -24,6 +24,13 @@ export default {
       },
       boxShadow: {
         card: '0px 1px 2px 0px rgba(0, 0, 0, 0.05)'
+      },
+      fontSize: {
+        xs: ['8px', '12px'],
+        sm: ['14px', '20px'],
+        base: ['16px', '24px'],
+        lg: ['20px', '28px'],
+        xl: ['24px', '32px'],
       }
     },
   },
