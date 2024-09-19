@@ -7,7 +7,7 @@ const Navbar = () => {
         <NavLink to="/" className='w-10 h-10 rounded-lg bg-black items-center justify-center flex font-bold shadow-md transition-all ease-in-out duration-500 hover:scale-125'>
             <p className="red-gradient_text">DN</p>
         </NavLink>
-        <nav className="flex text-sm gap-7 font-medium ">
+        <nav className="flex text-md gap-7 font-medium ">
                 <div className="transition ease-in-out duration-700 hover:scale-125">
                     <NavLink to="/about" className={({ isActive }) => isActive ? 'text-red-700' : 'text-black' }>
                         About

@@ -16,7 +16,7 @@ const Home = () => {
   const changeStage = () => {
     var i = currentStage;
     i += 1
-    if (i == 6) {
+    if (i == 8) {
       i = 1;
     }
     setCurrentStage(i);
