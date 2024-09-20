@@ -7,11 +7,14 @@ const About = () => {
 
     >
       <Reveal>
-        <div className='bg-image text-black subhead-text sm:place-content-start sm:text-left text-center pl-32'>
-          <h1 className='pt-36 sm:pl-80'>Hello, 👋 I'm</h1>
-          <span className='red-gradient_text sm:pl-48 sm:text-5xl text-3xl'>Dylan Ngo,</span>
-          <p className='sm:pl-16'>a software engineering</p>
-          <p className='sm:pl-64'>student</p>
+        <div className='bg-image text-black subhead-text text-center align-middle'>
+          <div>
+            <h1>Hello, 👋 I'm</h1>
+            <span className='red-gradient_text sm:text-5xl text-3xl'>Dylan Ngo,</span>
+            <p>a software engineering</p>
+            <p>student</p>
+          </div>
+          
         </div>
       </Reveal>
       
