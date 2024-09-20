@@ -24,16 +24,21 @@ body:has(.card[data-color="green"]:hover) {
 
 @layer utilities {
   .max-container {
-    @apply max-w-5xl mx-auto sm:p-16 pb-12 !pt-[126px] px-8 min-h-[calc(100vh-80px)];
+    @apply max-w-5xl mx-auto sm:px-16 pb-12 !pt-6 px-8 min-h-[calc(100vh-80px)];
   }
 
   .head-text {
-    @apply sm:text-5xl text-3xl font-semibold sm:leading-snug font-poppins;
+    @apply sm:text-5xl text-3xl font-semibold sm:leading-tight;
   }
 
   .subhead-text {
-    @apply font-semibold sm:text-3xl text-xl relative font-poppins;
+    @apply font-medium sm:text-3xl text-xl relative sm:leading-tight;
   }
+
+  .subhead-text2 {
+    @apply font-semibold sm:text-3xl text-xl relative sm:leading-tight;
+  }
+
 
   .blue-gradient_text {
     @apply bg-gradient-to-r from-[#00c6ff] to-[#0072ff] bg-clip-text text-transparent;
@@ -56,7 +61,7 @@ body:has(.card[data-color="green"]:hover) {
   }
 
   .header {
-    @apply flex justify-between absolute items-center bg-white opacity-80 sm:px-32 py-4 px-8 mx-auto top-0 z-10 right-0 left-0;
+    @apply flex justify-between absolute items-center max-w-5xl sm:px-16 py-4 px-8 mx-auto top-0 z-10 right-0 left-0;
   }
 
   .footer {
@@ -82,6 +87,7 @@ body:has(.card[data-color="green"]:hover) {
   .cta-text {
     @apply text-black-500 font-extrabold flex-1 text-3xl max-md:text-center;
   }
+
 }
 
 .glassmorphism {
@@ -201,4 +207,34 @@ body:has(.card[data-color="green"]:hover) {
   border: #fff;
   box-shadow: 0.6vmin 0.6vmin #fff, 1vmin 1vmin #d2e4ff, 1vmin 1vmin #d2e4ff,
     0.65vmin 1vmin #d2e4ff, 1vmin 0.65vmin #d2e4ff;
+}
+
+.slide-in {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: #8b0000;
+  z-index: 15;
+  transform-origin: top;
+}
+
+.slide-out {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: #8b0000;
+  z-index: 15;
+  transform-origin: bottom;
+}
+
+.bg-image {
+  background-image: linear-gradient(1turn, #ffffff, 15%, transparent, 96%, #ffffff), url(./assets/FEp9iwFXwAMJGDm.jpg);
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
 }

@@ -1,12 +1,52 @@
 import React from 'react'
-
+import { motion } from 'framer-motion';
+import Reveal from '../components/Reveal';
 const About = () => {
   return (
-    <body className='w-full h-screen bg-white'>
+    <div className='w-full h-screen bg-white' 
+
+    >
+      <Reveal>
+        <div className='bg-image text-black subhead-text sm:place-content-start sm:text-left text-center pl-32'>
+          <h1 className='pt-36 sm:pl-80'>Hello, 👋 I'm</h1>
+          <span className='red-gradient_text sm:pl-48 sm:text-5xl text-3xl'>Dylan Ngo,</span>
+          <p className='sm:pl-16'>a software engineering</p>
+          <p className='sm:pl-64'>student</p>
+        </div>
+      </Reveal>
+      
       <section className='max-container'>
-       <h1 className='head-text'>Hello, I'm <span className='red-gradient_text'>Dylan</span></h1>
+      
+       
+       <p>a software engineering student studying at UNSW. I am passionate about design, full-stack development and also game development. 
+        My favourite thing that I find about coding is that satisfying result after a continous grind. I enjoy pushing myself
+        to my absolute limit, to bring the best out of anything I do.
+        <br />
+        <br />
+        If you manage to find me not behind a monitor and keyboard, I'll be enjoying some of my hobbies such as training with my Oztag team or listening to music.
+        </p>
+        <br />
+        <h2 className='head-text'>Skills</h2>
+        <br />
       </section>
-    </body>
+      <motion.div
+            className='slide-in'
+            initial={{ scaleY:0 }}
+            animate={{ scaleY:0 }}
+            exit={{ scaleY:1 }}
+            transition={{ duration: 1, ease: [0.22, 1, 0.36, 1] }}
+        />
+        <motion.div
+            className='slide-out'
+            initial={{ scaleY:1 }}
+            animate={{ scaleY:0 }}
+            exit={{ scaleY:0 }}
+            transition={{ duration: 1, ease: [0.22, 1, 0.36, 1] }}
+        />
+    </div>
+    
+    
+    
   )
 }
 
