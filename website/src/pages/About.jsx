@@ -2,7 +2,7 @@ import React from 'react'
 import { motion } from 'framer-motion';
 import { Link } from "react-router-dom";
 import Reveal from '../components/Reveal';
-import { socialLinks } from "../assets/constants";
+import { socialLinks, skills } from "../assets/constants";
 const About = () => {
   return (
     <div className='w-full h-screen bg-white' 
@@ -52,7 +52,24 @@ const About = () => {
         If you manage to find me not behind a monitor and keyboard, I'll be enjoying some of my hobbies such as training with my Oztag team or listening to music.
         </p>
         <br />
-        <h2 className='head-text'>Skills</h2>
+        <div className='py-10 flex flex-col'>
+        <h3 className='subhead-text'>My Skills</h3>
+
+        <div className='mt-16 flex flex-wrap gap-12'>
+          {skills.map((skill) => (
+            <div className='block-container w-20 h-20' key={skill.name}>
+              <div className='btn-back rounded-xl' />
+              <div className='btn-front rounded-xl flex justify-center items-center'>
+                <img
+                  src={skill.imageUrl}
+                  alt={skill.name}
+                  className='w-1/2 h-1/2 object-contain'
+                />
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
         <br />
         </Reveal>
       </section>
