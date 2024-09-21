@@ -10,17 +10,17 @@ const Navbar = () => {
             </NavLink>
             <nav className="flex text-md gap-7 font-medium ">
                     <div className="transition ease-in-out duration-700 hover:scale-125">
-                        <NavLink to="/about" className={({ isActive }) => isActive ? 'text-red-700' : 'text-black' }>
+                        <NavLink to="/about" className={({ isActive }) => isActive ? 'text-green-400' : 'text-black' }>
                             About
                         </NavLink>
                     </div>
                     <div className="transition ease-in-out duration-700 hover:scale-125">
-                        <NavLink to="/projects" className={({ isActive }) => isActive ? 'text-red-700' : 'text-black' }>
+                        <NavLink to="/projects" className={({ isActive }) => isActive ? 'text-green-400' : 'text-black' }>
                             Projects
                         </NavLink>
                     </div>
                     <div className="transition ease-in-out duration-700 hover:scale-125">
-                    <NavLink to="/contact" className={({ isActive }) => isActive ? 'text-red-700' : 'text-black' }>
+                    <NavLink to="/contact" className={({ isActive }) => isActive ? 'text-green-400' : 'text-black' }>
                     Contact
                     </NavLink>
                     </div>

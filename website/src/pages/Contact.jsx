@@ -1,10 +1,11 @@
 import React from 'react'
 import { motion } from 'framer-motion';
+import Footer from '../components/Footer';
 
 const Contact = () => {
   return (
-    <div>
-      
+    <div className='w-full h-screen bg-white'>
+      <Footer />
       <motion.div
             className='slide-in'
             initial={{ scaleY:0 }}

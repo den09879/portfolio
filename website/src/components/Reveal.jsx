@@ -20,13 +20,13 @@ const Reveal = ({ children, width = 'fit-content' }) => {
     <div ref={ref} className='relative' style={{ width }}>
         <motion.div
           variants={{
-            hidden: { opacity: 0, y: 75 },
+            hidden: { opacity: 0, y: 25 },
             visible: { opacity: 1, y: 0 },
           }}
           initial='hidden'
           animate={mainControls}
           exit='hidden'
-          transition={{ duration: 0.5, delay: 0.25 }}
+          transition={{ duration: 0.25, delay: 0.15 }}
         >
           {children}
         </motion.div>
@@ -38,14 +38,14 @@ const Reveal = ({ children, width = 'fit-content' }) => {
           initial='hidden'
           animate={slideControls}
           exit='hidden'
-          transition={{ duration: 0.5, ease: 'easeIn' }}
+          transition={{ duration: 0.4, ease: 'easeIn' }}
           style={{
             position: 'absolute',
             top: 4,
             bottom: 4,
             left: 0,
             right: 0,
-            background: '#8b0000',
+            background: '#5bd683',
             zIndex: 20,
           }}
         >

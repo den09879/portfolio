@@ -10,19 +10,25 @@ import {
     javascript,
     linkedin,
     mongodb,
-    motion,
     mui,
-    nextjs,
     nodejs,
     pricewise,
     react,
-    redux,
-    sass,
     snapgram,
     summiz,
     tailwindcss,
     threads,
-    typescript
+    lambda,
+    s3,
+    chash,
+    c,
+    haskell,
+    java,
+    python,
+    sql,
+    unity,
+    unreal,
+    graph
 } from "../icons";
 
 export const skills = [
@@ -30,21 +36,6 @@ export const skills = [
         imageUrl: css,
         name: "CSS",
         type: "Frontend",
-    },
-    {
-        imageUrl: express,
-        name: "Express",
-        type: "Backend",
-    },
-    {
-        imageUrl: git,
-        name: "Git",
-        type: "Version Control",
-    },
-    {
-        imageUrl: github,
-        name: "GitHub",
-        type: "Version Control",
     },
     {
         imageUrl: html,
@@ -55,6 +46,77 @@ export const skills = [
         imageUrl: javascript,
         name: "JavaScript",
         type: "Frontend",
+    },  
+    {
+        imageUrl: chash,
+        name: "C#",
+        type: "Language",
+    },
+    {
+        imageUrl: c,
+        name: "C",
+        type: "Language",
+    },
+    {
+        imageUrl: haskell,
+        name: "Haskell",
+        type: "Language",
+    },
+    {
+        imageUrl: java,
+        name: "Java",
+        type: "Language",
+    },
+    {
+        imageUrl: python,
+        name: "Python",
+        type: "Language",
+    },
+    {
+        imageUrl: sql,
+        name: "SQL",
+        type: "Language",
+    },
+    {
+        imageUrl: graph,
+        name: "GraphQL",
+        type: "Language",
+    },
+];
+
+export const libraries = [
+    {
+        imageUrl: express,
+        name: "Express",
+        type: "Backend",
+    },
+    {
+        imageUrl: mui,
+        name: "MUI",
+        type: "Frontend",
+    },
+    {
+        imageUrl: react,
+        name: "React",
+        type: "Frontend",
+    },  
+    {
+        imageUrl: tailwindcss,
+        name: "Tailwind",
+        type: "Frontend",
+    },
+    {
+        imageUrl: lambda,
+        name: "Lambda",
+        type: "Frontend",
+    },
+];
+
+export const tools = [
+    {
+        imageUrl: git,
+        name: "Git",
+        type: "Version Control",
     },
     {
         imageUrl: mongodb,
@@ -62,52 +124,26 @@ export const skills = [
         type: "Database",
     },
     {
-        imageUrl: motion,
-        name: "Motion",
-        type: "Animation",
-    },
-    {
-        imageUrl: mui,
-        name: "Material-UI",
-        type: "Frontend",
-    },
-    {
-        imageUrl: nextjs,
-        name: "Next.js",
-        type: "Frontend",
-    },
-    {
         imageUrl: nodejs,
         name: "Node.js",
         type: "Backend",
     },
     {
-        imageUrl: react,
-        name: "React",
+        imageUrl: s3,
+        name: "S3 Bucket",
         type: "Frontend",
     },
     {
-        imageUrl: redux,
-        name: "Redux",
-        type: "State Management",
+        imageUrl: unity,
+        name: "Unity",
+        type: "Language",
     },
     {
-        imageUrl: sass,
-        name: "Sass",
-        type: "Frontend",
+        imageUrl: unreal,
+        name: "Unreal",
+        type: "Language",
     },
-    {
-        imageUrl: tailwindcss,
-        name: "Tailwind CSS",
-        type: "Frontend",
-    },
-    {
-        imageUrl: typescript,
-        name: "TypeScript",
-        type: "Frontend",
-    }
 ];
-
 
 export const socialLinks = [
     {
@@ -129,6 +165,8 @@ export const socialLinks = [
         target: '_blank',
     }
 ];
+
+
 
 export const projects = [
     {
