@@ -1,26 +1,49 @@
 import React from 'react'
 import { motion } from 'framer-motion';
+import { Link } from "react-router-dom";
 import Reveal from '../components/Reveal';
+import { socialLinks } from "../assets/constants";
 const About = () => {
   return (
     <div className='w-full h-screen bg-white' 
 
     >
-      <Reveal>
-        <div className='bg-image text-black subhead-text text-center align-middle'>
-          <div>
-            <h1>Hello, 👋 I'm</h1>
-            <span className='red-gradient_text sm:text-5xl text-3xl'>Dylan Ngo,</span>
-            <p>a software engineering</p>
-            <p>student</p>
+      
+        <div className='bg-image font-medium text-black subhead-text2 flex justify-center'>
+          <div className='w-fit sm:mx-0 sm:mt-40 sm:ml-40 sm:mr-auto mt-24 '>
+            <Reveal> 
+              <h1>Hello, 👋 I'm</h1>  
+            </Reveal>  
+            <Reveal> 
+              <span className='font-semibold sm:text-7xl red-gradient_text'>Dylan Ngo</span>
+            </Reveal>  
+            <Reveal> 
+              <p className='text-base'>Software Engineering Student</p>
+            </Reveal>  
+            <Reveal> 
+              <div className='flex gap-2 items-center justify-center'>
+                {socialLinks.map((link) => (
+                <Link key={link.name} to={link.link} target={link.target}>
+                  <img
+                    src={link.iconUrl}
+                    alt={link.name}
+                    className='w-8 h-8 object-contain hover:scale-125 transition-all ease-in-out duration-500'
+                  />
+                </Link>
+              ))} 
+              </div>
+            </Reveal>
+              
           </div>
           
         </div>
-      </Reveal>
       
+      
+
       <section className='max-container'>
       
-       
+        <Reveal>
+          <h1 className='subhead-text'>About Me</h1>
        <p>a software engineering student studying at UNSW. I am passionate about design, full-stack development and also game development. 
         My favourite thing that I find about coding is that satisfying result after a continous grind. I enjoy pushing myself
         to my absolute limit, to bring the best out of anything I do.
@@ -31,7 +54,9 @@ const About = () => {
         <br />
         <h2 className='head-text'>Skills</h2>
         <br />
+        </Reveal>
       </section>
+      
       <motion.div
             className='slide-in'
             initial={{ scaleY:0 }}

@@ -36,9 +36,8 @@ body:has(.card[data-color="green"]:hover) {
   }
 
   .subhead-text2 {
-    @apply font-semibold sm:text-3xl text-xl relative sm:leading-tight;
+    @apply sm:text-3xl text-xl;
   }
-
 
   .blue-gradient_text {
     @apply bg-gradient-to-r from-[#00c6ff] to-[#0072ff] bg-clip-text text-transparent;
