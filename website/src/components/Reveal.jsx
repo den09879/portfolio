@@ -1,5 +1,6 @@
 import React, { useEffect, useRef } from 'react'
 import { motion, useInView, useAnimation } from 'framer-motion';
+
 const Reveal = ({ children, width = 'fit-content' }) => {
   const ref = useRef(null);
   const isInView = useInView(ref);

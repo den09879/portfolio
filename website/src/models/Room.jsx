@@ -6,9 +6,8 @@ Source: https://sketchfab.com/3d-models/pokemon-firered-players-room-b23b6b25320
 Title: Pokemon FireRed - Player's Room
 */
 
-import React, { useRef, useEffect } from 'react'
+import React, { useRef } from 'react'
 import { useGLTF } from '@react-three/drei'
-import { useFrame, useThree } from '@react-three/fiber'
 import { a } from '@react-spring/three'
 
 import roomScene from '../assets/3d/pokemon_firered_-_players_room.glb';

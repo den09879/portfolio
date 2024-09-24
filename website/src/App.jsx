@@ -1,19 +1,16 @@
 
-import { BrowserRouter as Router } from 
-'react-router-dom';
+import { BrowserRouter as Router } from 'react-router-dom';
 
-
-import Navbar from './components/Navbar';
 import AnimatedRoutes from './components/AnimatedRoutes';
-import Footer from './components/Footer';
+import Navbar from './components/Navbar';
+
 const App = () => {
   
   return (
     <main className='bg-black-500 h-[100vh]'>
         <Router>
-            <Navbar />
-            <AnimatedRoutes />
-            
+          <Navbar />
+          <AnimatedRoutes />
         </Router>
     </main>
     

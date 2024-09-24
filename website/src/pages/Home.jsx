@@ -1,16 +1,17 @@
-import React, { Suspense, useEffect, useState } from 'react'
+import React, { Suspense, useState } from 'react'
 
 import { Canvas } from '@react-three/fiber';
 import { CameraControls } from '@react-three/drei';
 import { motion } from 'framer-motion';
 
+import HomeInfo from '../components/HomeInfo';
 import Loader from '../components/Loader';
+
 import Room from '../models/Room';
 import Trainer from '../models/Trainer';
 import Pika from '../models/Pika';
 import Computer from '../models/Computer';
 import Gnome from '../models/Gnome';
-import HomeInfo from '../components/HomeInfo';
 
 const Home = () => {
 

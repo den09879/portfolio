@@ -16,7 +16,6 @@ import tailwindcss from './tailwindcss.svg'
 import typescript from './typescript.svg'
 import linkedin from './linkedin2.svg'
 import twitter from './twitter.svg'
-import car from './car.svg'
 import estate from './estate.svg'
 import pricewise from './pricewise.svg'
 import snapgram from './snapgram.svg'
@@ -37,6 +36,12 @@ import sql from './sql.svg'
 import unity from './unity.svg'
 import unreal from './unreal.svg'
 import graph from './graphql-icon.svg'
+import weather from './thunder-svgrepo-com.svg'
+import invoice from './invoice-svgrepo-com.svg'
+import game from './game-console-svgrepo-com.svg'
+import paint from './paint-pallet-svgrepo-com.svg'
+import cross from './cross-svgrepo-com.svg'
+
 export {
     css,
     express,
@@ -56,7 +61,6 @@ export {
     typescript,
     linkedin,
     twitter,
-    car,
     estate,
     pricewise,
     snapgram,
@@ -76,5 +80,10 @@ export {
     sql,
     unity,
     unreal,
-    graph
+    graph,
+    weather,
+    invoice,
+    game,
+    paint,
+    cross
 }

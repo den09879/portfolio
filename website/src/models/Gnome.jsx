@@ -5,6 +5,7 @@ import { useAnimations, useGLTF } from '@react-three/drei';
 import { useFrame } from '@react-three/fiber';
 
 const actType = ['Wizard_Gnome_Armature|Walking', 'Wizard_Gnome_Armature|Fall', 'Wizard_Gnome_Armature|Hit', 'Wizard_Gnome_Armature|Curse'];
+
 const Gnome = () => {
 	const gnomeRef = useRef();
     const [ act, setAct ] = useState('Wizard_Gnome_Armature|Walking');
