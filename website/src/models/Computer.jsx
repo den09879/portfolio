@@ -14,7 +14,7 @@ const Computer = () => {
 	}, []);
 	
   return (
-    <mesh position={[-4.4,0.75,-2.4]} scale={[0.25,0.25,0.25]} ref={compRef}>
+    <mesh position={[-4.4,0.8,-2.4]} scale={[0.25,0.25,0.25]} ref={compRef}>
         <primitive object={scene} />
     </mesh>
   )

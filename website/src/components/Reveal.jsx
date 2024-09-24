@@ -12,10 +12,7 @@ const Reveal = ({ children, width = 'fit-content' }) => {
     if (isInView) {
       mainControls.start('visible');
       slideControls.start('visible');
-    } else {
-      mainControls.start('hidden');
-      slideControls.start('hidden');
-    }
+    } 
   }, [isInView]);
   return (
     <div ref={ref} className='relative' style={{ width }}>
@@ -26,8 +23,7 @@ const Reveal = ({ children, width = 'fit-content' }) => {
           }}
           initial='hidden'
           animate={mainControls}
-          exit='hidden'
-          transition={{ duration: 0.25, delay: 0.15 }}
+          transition={{ duration: 0.5, delay: 0.25 }}
         >
           {children}
         </motion.div>
@@ -38,8 +34,7 @@ const Reveal = ({ children, width = 'fit-content' }) => {
           }}
           initial='hidden'
           animate={slideControls}
-          exit='hidden'
-          transition={{ duration: 0.4, ease: 'easeIn' }}
+          transition={{ duration: 0.5, ease: 'easeIn'}}
           style={{
             position: 'absolute',
             top: 4,

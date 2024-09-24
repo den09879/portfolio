@@ -9,7 +9,7 @@ import close from '../assets/icons/arrow-right-svgrepo-com.svg';
 const HomeInfo = ({ currentStage }) => {
     if (currentStage === 1) {
         return (
-            <h1 className='sm:text-sm sm:leading-snug text-center neo-brutalism-blue py-4 px-8 text-black mx-5 font-medium'>
+            <h1 className='sm:text-lg sm:leading-snug text-center neo-brutalism-blue py-4 px-8 mt-8 text-black mx-5 font-medium'>
                 Hi, I'm
                 <span className='font-bold mx-1 text-black'>Dylan</span>
                 <br />
@@ -24,7 +24,7 @@ const HomeInfo = ({ currentStage }) => {
 
     if (currentStage === 2) {
         return (
-            <h1 className='sm:text-sm sm:leading-snug text-center neo-brutalism-blue py-4 px-8 text-black mx-5 font-medium'>
+            <h1 className='sm:text-lg sm:leading-snug text-center neo-brutalism-blue py-4 px-8 mt-8 text-black mx-5 font-medium'>
                 Learn about me and some of the 
                 <br />
                 skills I have developed.
@@ -38,7 +38,7 @@ const HomeInfo = ({ currentStage }) => {
 
     if (currentStage === 3) {
         return (
-            <h1 className='sm:text-sm sm:leading-snug text-center neo-brutalism-blue py-4 px-8 text-black mx-5 font-medium'>
+            <h1 className='sm:text-lg sm:leading-snug text-center neo-brutalism-blue py-4 px-8 mt-8 text-black mx-5 font-medium'>
                 View my portfolio to see some of my
                 <br />
                 projects developed through the years.
@@ -54,7 +54,7 @@ const HomeInfo = ({ currentStage }) => {
 
     if (currentStage === 4) {
         return (
-            <h1 className='sm:text-sm sm:leading-snug text-center neo-brutalism-blue py-4 px-8 text-black mx-5 font-medium'>
+            <h1 className='sm:text-lg sm:leading-snug text-center neo-brutalism-blue py-4 px-8 mt-8 text-black mx-5 font-medium'>
                 If you're recruiting a developer 
                 <br />
                 or need help with a project, I
@@ -69,7 +69,7 @@ const HomeInfo = ({ currentStage }) => {
 
     if (currentStage === 5) {
         return (
-            <h1 className='sm:text-sm sm:leading-snug text-center neo-brutalism-blue py-4 px-8 text-black mx-5 font-medium'>
+            <h1 className='sm:text-lg sm:leading-snug text-center neo-brutalism-blue py-4 px-8 mt-8 text-black mx-5 font-medium'>
                 You can control the camera in this 
                 <br />
                 room so feel free to look

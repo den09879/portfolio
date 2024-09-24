@@ -10,12 +10,10 @@ const Fade = ({ children, width = 'fit-content' }) => {
   useEffect (() => {
     if (isInView) {
       mainControls.start('visible');
-    } else {
-      mainControls.start('hidden');
-    }
+    } 
   }, [isInView]);
   return (
-    <div ref={ref} className='relative' style={{ width }}>
+    <div ref={ref} className='relative'>
       <motion.div
         variants={{
           hidden: { opacity: 0, y: 25 },
@@ -23,7 +21,6 @@ const Fade = ({ children, width = 'fit-content' }) => {
         }}
         initial='hidden'
         animate={mainControls}
-        exit='hidden'
         transition={{ duration: 0.5, delay: 0.25 }}
       >
         {children}

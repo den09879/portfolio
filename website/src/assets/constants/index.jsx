@@ -34,7 +34,8 @@ import {
 
 import video from "../ITTAKESFIVE.mp4";
 import video2 from "../PAINT.mp4";
-
+import img from "../dashtracker.png";
+import img2 from "../weather.png"
 export const skills = [
     {
         imageUrl: css,
@@ -177,21 +178,23 @@ export const projects = [
         iconUrl: invoice,
         theme: 'btn-back-red',
         name: 'E-Invoicing Application',
-        description: 'An E-Invoicing application built with Python 3.0, that verifies and renders unreadable invoices into human-readable formats. Stored invoices that can be viewed through a React UI which extracts useful information.',
+        description: "An E-Invoicing application built with Python 3.0 that verifies and renders unreadable invoices into human-readable formats. Stored invoices can be viewed through a React UI which extracts useful information. Working on this project taught me more about the elements of an agile software methodology. It was also one of the first applications I built that consisted of developing an front-end interface and integrating it with a back-end API.",
         link: 'https://github.com/den09879/uniprojects/tree/main/InvoiceProject',
+        video: img,
     },
     {
         iconUrl: weather,
         theme: 'btn-back-green',
         name: 'Weather Application',
-        description: 'A serverless GraphQL API deployed using Amazon Lambda. Application built with a React UI which showcased key weather information and wind energy efficiency. Locations and data were extracted from Bureau of Meteorology.',
+        description: 'A serverless GraphQL API deployed using Amazon Lambda. Application built with a React UI which showcased key weather information and wind energy efficiency. Locations and data were extracted from Bureau of Meteorology. I learnt more about cloud services and deploying an API via a serverless deployment. Working on this project also gave me more insight on how code should be developed for a company standard as we were encouraged to have our applications compatible with services built by other groups.',
         link: 'https://github.com/den09879/uniprojects/tree/main/WeatherProject',
+        video: img2,
     },
     {
         iconUrl: game,
         theme: 'btn-back-blue',
         name: '3D Platformer - It Takes Five',
-        description: 'Developed a 3D platformer using Unreal Engine 5, includes gaming mechanics such as  collision detection and physics-based interactions alongisde features such as a grappling hook, platform gun and mini-games.',
+        description: 'Developed a 3D platformer using Unreal Engine 5, includes gaming mechanics such as  collision detection and physics-based interactions alongisde features such as a grappling hook, platform gun and mini-games. During this project I gained more experience leading a team. Throughout the term I was the main voice during meetings as I allocated tasks and managed expectations.',
         link: '',
         video: video,
     },
@@ -199,7 +202,7 @@ export const projects = [
         iconUrl: paint,
         theme: 'btn-back-pink',
         name: 'Brain Painting Application',
-        description: 'Developed a Brain Painting Application using Unity with C# scripts. The application consists of multiple functions such as changing colour, shape, angle and size all controllable via a Brain Computer Interaface headset.',
+        description: 'Developed a Brain Painting Application using Unity with C# scripts. The application consists of multiple functions such as changing colour, shape, angle and size all controllable via a Brain Computer Interaface headset. For this project I gained more tenacity and independent thinking as I continued to create my application with the limited resources provided.',
         link: 'https://github.com/den09879/uniprojects/tree/main/PaintApplicationAssets/Build',
         video: video2,
     },

@@ -1,6 +1,5 @@
 import React from 'react'
 import { Link } from "react-router-dom";
-import { motion } from 'framer-motion';
 
 import { projects } from "../assets/constants";
 import { arrow } from "../assets/icons";
@@ -30,6 +29,16 @@ const Projects = () => {
     }
   }
 
+  const checkPhoto = (project) => {
+    if (project === "Weather Application") {
+      return "vid"
+    } else if (project === "E-Invoicing Application") {
+      return "vid"
+    } else {
+      return "hidden"
+    }
+  }
+
   const codeOrBuild = (project) => {
     if (project === "Brain Painting Application") {
       return "build"
@@ -41,30 +50,21 @@ const Projects = () => {
 
   return (
     <div className='w-full h-screen bg-white'>
-
       <section className='max-container'>
           <Reveal>
             <h2 className='subhead-text text-green-700 mt-20'>My Projects</h2>
             <br />
           </Reveal>
           <Reveal>
-          <p> These are what I consider my most notable projects that demonstrate my journey studying software engineering. With each project I completed I further developed my skills learning new languages,
-            frameworks, libraries and tools, learning to adapt and efficiently integrate new technologies into my coding. 
-          </p>
-          </Reveal>
-          <br />
-          <br />
-          <Reveal>
-          <p>
-            These projects were developed with some software concepts such as agile and scrum methodolgies,
-            object-oriented programming and software testing. Several of my projects were group efforts, demonstrating my ability to collaborate effectively within a team and my deep understanding of Git and 
-            testing principles to ensure the deployment of high-quality software.
+          <p> These are my most notable projects that demonstrate my journey studying software engineering. 
+            Each project has improved my skills as a software developer, as I have studied different languages, frameworks, libraries, adapting all sorts of services into my coding.
+            My projects have provided me with hands on experience with software concepts such as agile and scrum methodolgies object-oriented programming and software testing. 
           </p>
           </Reveal>
           <div className='flex flex-wrap my-20 gap-16'>
             {projects.map((project) => 
               (
-              <div className='lg:w-[400px] w-full' key={project.name}>
+              <div className='w-full' key={project.name}>
                 <Fade>
                 <div className='block-container w-12 h-12'>
                   <div className={`btn-back rounded-xl ${project.theme}`} />
@@ -91,6 +91,8 @@ const Projects = () => {
                     <source src={project.video} type="video/mp4"/>
                     Your browser does not support the video tag.
                   </video>
+                  <img className={checkPhoto(project.name)} src={project.video}>
+                  </img>
                   </Fade>
                   <Reveal>
                   <div className={checkProject(project.name)}>
@@ -115,25 +117,12 @@ const Projects = () => {
           </div>
       </section>
 
-      <CTA />
-      <Footer />
+      <Fade>
+        <CTA />
+        <Footer />
+      </Fade>
 
-      <motion.div
-            className='slide-in'
-            initial={{ scaleY:0 }}
-            animate={{ scaleY:0 }}
-            exit={{ scaleY:1 }}
-            transition={{ duration: 1, ease: [0.22, 1, 0.36, 1] }}
-      />
-      <motion.div
-          className='slide-out'
-          initial={{ scaleY:1 }}
-          animate={{ scaleY:0 }}
-          exit={{ scaleY:0 }}
-          transition={{ duration: 1, ease: [0.22, 1, 0.36, 1] }}
-      />
-     
-    </div>
+      </div>
   )
 }
 
